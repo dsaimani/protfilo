@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Section</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* Reset */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3e8ff;
+      color: #6a0dad;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #6a0dad;
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .skills-title {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .skills-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .skills-category {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      min-width: 280px;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .skills-category:hover {
+      transform: scale(1.03);
+    }
+
+    .skills-category h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #4b0082;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .skills-list span {
+      background-color: #e0c3fc;
+      border-radius: 5px;
+      padding: 6px 12px;
+      margin: 5px;
+      font-size: 1em;
+    }
+    /* Responsive Design */
+
+    @media (max-width: 768px) {
+      .skills-category {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="interships.html">Internships</a>
+        <a href="project.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="skills-title">SKILLS</div>
+      <div class="skills-section">
+        <div class="skills-category">
+          <h3>Programming Languages</h3>
+          <div class="skills-list">
+            <span>Python</span>
+            <span>Java</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Web Technologies</h3>
+          <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Database Management</h3>
+          <div class="skills-list">
+            <span>MySQL</span>
+            <span>DBMS</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Data Strategies</h3>
+          <div class="skills-list">
+            <span>PowerBI</span>
+            <span>MS Excel</span>
+            <span>Data Analytics</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Soft SKills</h3>
+          <div class="skills-list">
+            <span>Machine Learning</span>
+            <span>Artificial Intelligence</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Other Technologies</h3>
+          <div class="skills-list">
+            <span>Problem-Solving</span>
+            <span>Team Collaboration</span>
+            <span>Adaptanility</span>
+            <span>Critical Thinking </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

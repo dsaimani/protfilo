@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #e0c3fc;
+      margin: 0;
+      padding: 0px;
+    }
+
+    header {
+      background-color: #6a0dad;
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav {
+      text-align: right;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .projects-section {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #7d3cff;
+    }
+
+    .underline {
+      width: 80px;
+      height: 4px;
+      background-color: #b278ff;
+      margin: 10px auto 30px;
+      border-radius: 2px;
+    }
+
+    .featured-project {
+      background: linear-gradient(to right, #b674f1, #c173f2);
+      color: white;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .featured-project h3 {
+      margin: 0 0 10px 0;
+      font-weight: 600;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tags span {
+      background-color: #f0e4ff;
+      color: #7d3cff;
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .project-card h4 {
+      color: #7d3cff;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skill</a>
+        <a href="interships.html">Internships</a>
+        <a href="project.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+      </nav>
+    </header>
+
+    <section class="projects-section">
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="underline"></div>
+
+      <div class="featured-project">
+        <h3>AI-powered Attendance using Face Detection</h3>
+        <div class="tags">
+          <span>Python</span>
+          <span>Flask</span>
+          <span>Face Recognition</span>
+          <span>AI</span>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>Online Grocery Store</h4>
+          <p>
+            Developed a web-based grocery store with user authentication,
+            product pages, and a shopping cart.
+          </p>
+          <div class="tags">
+            <span>Flask</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4>Portfolio Website</h4>
+          <p>
+            Designed and developed a personal portfolio showcasing skills,
+            resume, and project work.
+          </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4>Virtual Calculator</h4>
+          <p>
+            A Python-based GUI calculator application capable of basic
+            arithmetic operations.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Tkinter</span>
+            <span>GUI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

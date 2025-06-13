@@ -1,0 +1,104 @@
+/* Global Reset and Box Model */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0c3fc;
+}
+
+/* Header */
+
+header {
+  background-color: #6a0dad;
+  width: 100%;
+  padding: 15px 0;
+}
+
+nav {
+  text-align: right;
+  padding: 0 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+
+#front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#front h1 {
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#front p {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Contact Section */
+
+.contact-inline {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  /* allows wrap on smaller screens */
+  margin-top: 20px;
+}
+
+.contact-inline p {
+  margin: 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.contact-inline i {
+  margin-right: 6px;
+  color: #070707;
+}
+
+.contact-inline a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-inline a:hover {
+  text-decoration: underline;
+  color: #6a0dad;
+}
+
+/* Footer */
+
+footer {
+  background-color: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-family: "Segoe UI", sans-serif;
+}

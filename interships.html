@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Internships Timeline</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0c3fc;
+        color: #2a1e5e;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: #6a0dad;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      nav {
+        text-align: right;
+      }
+
+      nav a {
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      #internships {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 36px;
+        color: #2a1e5e;
+        margin-bottom: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .timeline {
+        position: relative;
+        padding: 10px 0;
+      }
+      /* The vertical timeline line */
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 100%;
+        background-color: #666e2c;
+        /* greenish color */
+        border-radius: 2px;
+      }
+
+      .timeline-item {
+        position: relative;
+        width: 50%;
+        padding: 20px 40px;
+        box-sizing: border-box;
+      }
+      /* Timeline content boxes */
+
+      .timeline-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        text-align: left;
+      }
+      /* Left side */
+
+      .timeline-item:nth-child(odd) {
+        left: 0;
+        clear: both;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-content {
+        margin-left: 0;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-content::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: -15px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent white;
+      }
+      /* Right side */
+
+      .timeline-item:nth-child(even) {
+        left: 50%;
+        clear: both;
+      }
+
+      .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 30px;
+      }
+
+      .timeline-item:nth-child(even) .timeline-content::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -15px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent white transparent transparent;
+      }
+      /* Internship date */
+
+      .timeline-content h4 {
+        color: #666e2c;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      /* Internship role */
+
+      .timeline-content h3 {
+        margin: 0 0 8px 0;
+        font-size: 22px;
+        color: #2a1e5e;
+      }
+      /* Internship company / details */
+
+      .timeline-content p em {
+        color: #555;
+        font-style: italic;
+      }
+      /* Responsive - stack timeline vertically on small screens */
+
+      @media screen and (max-width: 768px) {
+        .timeline::before {
+          left: 10px;
+        }
+        .timeline-item,
+        .timeline-item:nth-child(even),
+        .timeline-item:nth-child(odd) {
+          width: 100%;
+          left: 0 !important;
+          padding-left: 40px;
+          padding-right: 20px;
+          margin-bottom: 30px;
+        }
+        .timeline-content {
+          margin-left: 0 !important;
+        }
+        .timeline-content::after {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skill</a>
+        <a href="interships.html">Internships</a>
+        <a href="project.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+      </nav>
+    </header>
+    <section id="internships">
+      <h2 class="section-title">INTERNSHIPS</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>Oct 2024 – Nov 2024</h4>
+            <h3>Andriod Developer</h3>
+            <p><em>Virtual Internship</em></p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>Arp 2024 – Jun 2024</h4>
+            <h3>Machine Learning</h3>
+            <p>
+              <em>Virtual Internship</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>June 2024 – July 2024</h4>
+            <h3>Emerging Technologies (AI/ML)</h3>
+            <p><em> Virtual Internship </em></p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>Oct 2023 – Nov 2023</h4>
+            <h3>Salesforce</h3>
+            <p>
+              <em> Virtual Internship </em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
